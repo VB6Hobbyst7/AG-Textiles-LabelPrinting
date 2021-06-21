@@ -34,7 +34,7 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>false</DefineTrace>
     <Optimize>true</Optimize>
-    <OutputPath>..\Release\Actions\</OutputPath>
+    <OutputPath>Release\Actions\</OutputPath>
     <DocumentationFile>
     </DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
@@ -237,6 +237,9 @@
     <Content Include="Assemblies\Stimulsoft.Report.Helper.dll" />
     <Content Include="Assemblies\Stimulsoft.Report.Web.dll" />
     <Content Include="Assemblies\Stimulsoft.Report.Win.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Release\Actions\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

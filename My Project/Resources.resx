@@ -139,7 +139,7 @@
     <value>Het is niet gelukt de gegevens op te halen:</value>
   </data>
   <data name="SQLSelectProductDescription" xml:space="preserve">
-    <value>SELECT af801."id-tekst" Productnummer, af801.tekst Productnaam, af801.cdsoort Taalcode
+    <value>SELECT af801."cdsleutel1" Productnummer, af801.tekst Productnaam, af801.cdsoort Taalcode
 FROM pub."af-801" af801
 WHERE af801.cdtabel='bb-062'</value>
   </data>
