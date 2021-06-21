@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="messageConfigurationMissing" xml:space="preserve">
+    <value>Vul eerst de configuratie gegevens</value>
+  </data>
+  <data name="messageConnected" xml:space="preserve">
+    <value>Verbinding met Multivers Extended is gemaakt</value>
+  </data>
+  <data name="messageConnecting" xml:space="preserve">
+    <value>Verbinding maken met Multivers Extended...</value>
+  </data>
+  <data name="messageDataSelected" xml:space="preserve">
+    <value>Gegevens zijn opgehaald</value>
+  </data>
+  <data name="messageSelectData" xml:space="preserve">
+    <value>Gegevens ophalen...</value>
+  </data>
+  <data name="messageUnableToConnect" xml:space="preserve">
+    <value>Er kan geen verbinding worden gemaakt met Multivers Extended</value>
+  </data>
+  <data name="messageUnableToSelectData" xml:space="preserve">
+    <value>Het is niet gelukt de gegevens op te halen:</value>
+  </data>
+  <data name="SQLSelectProductDescription" xml:space="preserve">
+    <value>SELECT af801."id-tekst" Productnummer, af801.tekst Productnaam, af801.cdsoort Taalcode
+FROM pub."af-801" af801
+WHERE af801.cdtabel='bb-062'</value>
+  </data>
+  <data name="SQLSelectPackList" xml:space="preserve">
+    <value>SELECT lb183.nrpakbon Pakbonnummer, lb183."datum-pak" Datum, lb183.cddeb Debiteurnummer, ba001.naamorg Debiteurnaam
+FROM pub."lb-185" lb185, pub."lb-455" lb455, pub."lb-183" lb183, pub."aa-270" aa270, pub."ba-001" ba001
+WHERE lb185.cdadmin = lb455.cdadmin AND lb185.cdadmin = lb183.cdadmin AND lb185.cdadmin = aa270.cdadmin AND lb185.cdpartij = lb455.cdpartij AND lb185.cdprodukt = lb455.cdprodukt AND lb185.cdstandeenhd = lb455.cdstandeenhd
+AND lb185.nrmutatie = lb183.nrpakbon AND lb183.cddeb = aa270.cddeb AND aa270.cdorg = ba001.cdorg
+AND lb185.cdadmin = '{0}' AND lb185.cdmutatie = 'pak' AND lb185."datum-mut" &gt; {1}
+GROUP BY lb183.nrpakbon, lb183."datum-pak", lb183.cddeb, ba001.naamorg</value>
+  </data>
+  <data name="SQLSelectPackListLine" xml:space="preserve">
+    <value>SELECT lb183.nrpakbon Pakbonnummer, lb185.cdprodukt Productnummer, '' Productnaam, '' Productnummerdebiteur, lb185.cdpartij Partijnummer, LEFT(lb455."omschr-60", 19) Partijomschrijving, lb185.cdstandeenhd Eenheid, ba001.cdtaal Taalcode, lb183.cddeb Debiteurnummer
+FROM pub."lb-185" lb185, pub."lb-455" lb455, pub."lb-183" lb183, pub."aa-270" aa270, pub."ba-001" ba001
+WHERE lb185.cdadmin = lb455.cdadmin AND lb185.cdadmin = lb183.cdadmin  AND lb185.cdpartij = lb455.cdpartij AND lb185.cdprodukt = lb455.cdprodukt AND lb185.cdstandeenhd = lb455.cdstandeenhd AND lb183.cddeb = aa270.cddeb AND aa270.cdorg = ba001.cdorg
+AND lb185.nrmutatie = lb183.nrpakbon 
+AND lb185.cdadmin = '{0}' AND lb185.cdmutatie = 'pak' AND lb185."datum-mut" &gt; {1} GROUP BY lb183.nrpakbon, lb185.cdprodukt ,'','', lb185.cdpartij , LEFT(lb455."omschr-60", 19), lb185.cdstandeenhd, ba001.cdtaal, lb183.cddeb</value>
+  </data>
+  <data name="SQLSelectProductNumberCustomer" xml:space="preserve">
+    <value>SELECT bb196.cddebprod Productnummerdebiteur, bb196.cdprodukt Productnummer, bb196.cdstandeenhd Eenheid, aa270.cddeb Debiteurnummer
+FROM pub."af-316" af316 INNER JOIN pub."bb-196" bb196 ON af316.cdgrp = bb196.cdgrp INNER JOIN pub."aa-270" aa270 ON af316."id-groep" = aa270.cddeb</value>
+  </data>
+  <data name="messageLabelDesignError" xml:space="preserve">
+    <value>Het is niet gelukt het label te ontwerpen:</value>
+  </data>
+  <data name="messageLabelPrintError" xml:space="preserve">
+    <value>Het is niet gelukt om de labels af te drukken:</value>
+  </data>
+  <data name="messageNoLabelPrinter" xml:space="preserve">
+    <value>Stel eerst de labelprinter in bij de configuratie gegevens.</value>
+  </data>
+  <data name="messageNoSelection" xml:space="preserve">
+    <value>Selecteer eerst minimaal 1 pakbon regel.</value>
+  </data>
+</root>

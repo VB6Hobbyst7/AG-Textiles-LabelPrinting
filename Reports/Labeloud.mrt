@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <ReportData Ref="2" type="DataTableSource" isKey="true">
+        <Alias>ReportData</Alias>
+        <Columns isList="true" count="14">
+          <value>PAKBONNUMMER,System.String</value>
+          <value>PRODUCTNUMMER,System.String</value>
+          <value>PRODUCTNAAM,System.String</value>
+          <value>PRODUCTNUMMERDEBITEUR,System.String</value>
+          <value>PARTIJNUMMER,System.String</value>
+          <value>PARTIJOMSCHRIJVING,System.String</value>
+          <value>EENHEID,System.String</value>
+          <value>TAALCODE,System.String</value>
+          <value>cdstandeenhd,System.String</value>
+          <value>ProductCode,System.String</value>
+          <value>BatchNumber,System.String</value>
+          <value>Type,System.String</value>
+          <value>Dimensions,System.String</value>
+          <value>Quality,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>ReportData</Name>
+        <NameInSource>Data</NameInSource>
+      </ReportData>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <Gegevensstrook1 Ref="4" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,0.4,10.5,1.6</ClientRectangle>
+          <Components isList="true" count="3">
+            <Tekst1 Ref="5" type="Text" isKey="true">
+              <Border>None;Black;1;Solid;False;4;DarkBlue</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>0,0,3,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Verdana,8,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Tekst1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{IIF(ReportData.TAALCODE="E","Description",IIF(ReportData.TAALCODE="D","Umschreibung","Omschrijving"))}
+{IIF(ReportData.TAALCODE="E","Your item no.",IIF(ReportData.TAALCODE="D","Ihre Artikelnr.","Uw artikelnr."))}
+{IIF(ReportData.TAALCODE="E","AGT item no.",IIF(ReportData.TAALCODE="D","AGT Artikelnr.","AGT Artikelnr."))}
+{IIF(ReportData.TAALCODE="E","Box nr.",IIF(ReportData.TAALCODE="D","Kartonnr.","Doosnr."))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Tekst1>
+            <Tekst2 Ref="6" type="Text" isKey="true">
+              <Border>None;Black;1;Solid;False;4;DarkBlue</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>3.2,0,7.2,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Verdana,8</Font>
+              <Guid>c0c8f224e7344fe5ade5bb188ddfc770</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Tekst2</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{ReportData.PRODUCTNAAM}
+{ReportData.PRODUCTNUMMERDEBITEUR}
+{ReportData.PRODUCTNUMMER}
+{ReportData.PARTIJNUMMER} {ReportData.PARTIJOMSCHRIJVING}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Tekst2>
+            <Tekst3 Ref="7" type="Text" isKey="true">
+              <Border>None;Black;1;Solid;False;4;DarkBlue</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>3,0,0.2,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Verdana,8</Font>
+              <Guid>fa2db0e2692049bc8eb5c7d6f96ef258</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Tekst3</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>:
+:
+:
+:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Tekst3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>ReportData</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>Gegevensstrook1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="2">
+            <value>ASC</value>
+            <value>ProductCode</value>
+          </Sort>
+        </Gegevensstrook1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>b4bc3ae07ce04cb1bac2dc4b737f6dfd</Guid>
+      <Margins>0.5,0.5,0.5,0.5</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>3</PageHeight>
+      <PageWidth>11.5</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="8" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="9" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Rapport</ReportAlias>
+  <ReportChanged>10/24/2012 12:13:41 PM</ReportChanged>
+  <ReportCreated>9/13/2011 8:41:06 PM</ReportCreated>
+  <ReportFile>C:\Users\Harry van Kessel\AppData\Local\Twinvision.Glue\Actions\Reports\Label.mrt</ReportFile>
+  <ReportGuid>cb675ed4758d4237bdd39c81e515464f</ReportGuid>
+  <ReportName>Rapport</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2012.1.1300</ReportVersion>
+  <Script>Imports System
+Imports System.Drawing
+Imports System.Windows.Forms
+Imports System.Data
+Imports Stimulsoft.Controls
+Imports Stimulsoft.Base.Drawing
+Imports Stimulsoft.Report
+Imports Stimulsoft.Report.Dialogs
+Imports Stimulsoft.Report.Components
+
+Namespace Reports
+    Public Class Rapport
+        Inherits Stimulsoft.Report.StiReport
+
+        Public Sub New()
+            MyBase.New
+            Me.InitializeComponent
+        End Sub
+
+        #Region "StiReport Designer generated code - do not modify"
+        #End Region 'StiReport Designer generated code - do not modify
+    End Class
+End Namespace
+</Script>
+  <ScriptLanguage>VB</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
